@@ -10,7 +10,9 @@ class Person
   public int Age { get; set; }
   public decimal HeightInCentimeters { get; set; }
 }
+```
 
+```cs
 List<Person> People = new List<Person>();
 // Provide your connection string to the SqlQueryTool constructor
 SqlQueryTool sqlQueryTool = new SqlQueryTool(connectionString);
