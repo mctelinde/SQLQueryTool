@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PIAUsageAccumulatorTest
+namespace SqlQueryTool
 {
     class SqlQueryTool
     {
@@ -29,7 +29,7 @@ namespace PIAUsageAccumulatorTest
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             using (SqlCommand command = new SqlCommand(sqlText, connection))
             {
-				if (Timeout != null)
+		if (Timeout != null)
                 {
                     command.CommandTimeout = (int)Timeout;
                 }
@@ -81,7 +81,7 @@ namespace PIAUsageAccumulatorTest
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             using (SqlCommand command = new SqlCommand(sqlText, connection))
             {
-				if (Timeout != null)
+		if (Timeout != null)
                 {
                     command.CommandTimeout = (int)Timeout;
                 }
@@ -136,7 +136,7 @@ namespace PIAUsageAccumulatorTest
 
             using (SqlCommand command = new SqlCommand(sqlText, connection))
             {
-				if (Timeout != null)
+		if (Timeout != null)
                 {
                     command.CommandTimeout = (int)Timeout;
                 }
@@ -192,7 +192,7 @@ namespace PIAUsageAccumulatorTest
 
             using (SqlCommand command = new SqlCommand(sqlText, connection, transaction))
             {
-				if (Timeout != null)
+		if (Timeout != null)
                 {
                     command.CommandTimeout = (int)Timeout;
                 }
@@ -302,7 +302,7 @@ namespace PIAUsageAccumulatorTest
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             using (SqlCommand command = new SqlCommand(storedProcName, connection))
             {
-				if (Timeout != null)
+		if (Timeout != null)
                 {
                     command.CommandTimeout = (int)Timeout;
                 }
@@ -357,7 +357,7 @@ namespace PIAUsageAccumulatorTest
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             using (SqlCommand command = new SqlCommand(sqlText, connection))
             {
-				if (Timeout != null)
+		if (Timeout != null)
                 {
                     command.CommandTimeout = (int)Timeout;
                 }
@@ -374,7 +374,7 @@ namespace PIAUsageAccumulatorTest
         {
             using (SqlCommand command = new SqlCommand(sqlText, connection))
             {
-				if (Timeout != null)
+		if (Timeout != null)
                 {
                     command.CommandTimeout = (int)Timeout;
                 }
@@ -392,7 +392,7 @@ namespace PIAUsageAccumulatorTest
         {
             using (SqlCommand command = new SqlCommand(sqlText, connection, transaction))
             {
-				if (Timeout != null)
+		if (Timeout != null)
                 {
                     command.CommandTimeout = (int)Timeout;
                 }
@@ -411,7 +411,7 @@ namespace PIAUsageAccumulatorTest
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             using (SqlCommand command = new SqlCommand(sqlText, connection))
             {
-				if (Timeout != null)
+		if (Timeout != null)
                 {
                     command.CommandTimeout = (int)Timeout;
                 }
@@ -428,7 +428,7 @@ namespace PIAUsageAccumulatorTest
         {
             using (SqlCommand command = new SqlCommand(sqlText, connection))
             {
-				if (Timeout != null)
+		if (Timeout != null)
                 {
                     command.CommandTimeout = (int)Timeout;
                 }
@@ -450,7 +450,7 @@ namespace PIAUsageAccumulatorTest
         {
             using (SqlCommand command = new SqlCommand(sqlText, connection, transaction))
             {
-				if (Timeout != null)
+		if (Timeout != null)
                 {
                     command.CommandTimeout = (int)Timeout;
                 }
@@ -489,7 +489,7 @@ namespace PIAUsageAccumulatorTest
         {
             using (SqlCommand command = new SqlCommand(sqlText, connection, transaction))
             {
-				if (Timeout != null)
+		if (Timeout != null)
                 {
                     command.CommandTimeout = (int)Timeout;
                 }
