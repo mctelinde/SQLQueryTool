@@ -17,7 +17,7 @@ List<Person> People = new List<Person>();
 // Provide your connection string to the SqlQueryTool constructor
 SqlQueryTool sqlQueryTool = new SqlQueryTool(connectionString);
 // The YourDatabase..Person table has the same schema and field names as the Person class
-var dictResult = sqlQueryTool.Select("SELECT * FROM YourDatabase..Person");
+var dictResult = sqlQueryTool.Select("SELECT FirstName, LastName, Age, HeightInCentimeters FROM YourDatabase..Person");
 
 dictResult.ForEach(x => People.Add(sqlQueryTool.GetObjectFromDictionary<Person>(x)));
 ```
